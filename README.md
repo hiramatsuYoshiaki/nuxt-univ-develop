@@ -1,3 +1,6 @@
+# nuxt-univ-develop 
+Nuxtのアプリケーションのホスティング設定 
+ 
 # nuxt-univ-app1
 > My peachy Nuxt.js project
 ## reate-nuxt-app
