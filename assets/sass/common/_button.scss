@@ -1,0 +1,27 @@
+// button 
+.btn{
+  height: 3.6rem;
+  padding: 0 1.6rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: $btn-color-white;
+  border-radius: 1px;
+  background-color: $btn-bg-blue;
+  border: none;
+  box-shadow: $btn-box-shadow-z10;
+  margin: .8rem 0;
+  display: inline-block;
+  line-height: 1.6rem;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+//   font-family: 'Roboto', 'Helvetica', 'Arial', 'Sans Serif';
+//   box-sizing: border-box;
+    &:hover {
+        background-color: darken($btn-bg-darkblue, 5%);
+        box-shadow: $btn-box-shadow-z100;
+        cursor: pointer;
+        transition: $btn-trans;
+    }
+}

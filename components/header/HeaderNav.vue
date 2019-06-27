@@ -4,23 +4,77 @@
       <div class="m-menu-wrap">
         <div class="menu_items menu_items_column">
           <div class="menu-item-box">
-            <div class="menu_link" :class="{ menu_item_visible: page === '/works' }" @click="link_commit('/works')">
+            <div
+              class="menu_link"
+              :class="{ menu_item_visible: page === '/project' }"
+              @click="link_commit('/project')"
+            >
+              PROJECT
+            </div>
+            <div class="menu_underline" />
+          </div>
+          <div class="menu-item-box">
+            <div
+              class="menu_link"
+              :class="{ menu_item_visible: page === '/repository' }"
+              @click="link_commit('/repository')"
+            >
+              REPOSITORY
+            </div>
+            <div class="menu_underline" />
+          </div>
+          <div class="menu-item-box">
+            <div
+              class="menu_link"
+              :class="{ menu_item_visible: page === '/Config' }"
+              @click="link_commit('/Config')"
+            >
+              CONFIG
+            </div>
+            <div class="menu_underline" />
+          </div>
+
+          <div class="menu-item-box">
+            <div
+              class="menu_link"
+              :class="{ menu_item_visible: page === '/host' }"
+              @click="link_commit('/host')"
+            >
+              HOST
+            </div>
+            <div class="menu_underline" />
+          </div>
+          <div class="menu-item-box">
+            <div
+              class="menu_link"
+              :class="{ menu_item_visible: page === '/deploy' }"
+              @click="link_commit('/deploy')"
+            >
+              AUTO-DEPLOY
+            </div>
+            <div class="menu_underline" />
+          </div>
+          <!-- <div class="menu-item-box">
+            <div class="menu_link"
+            :class="{ menu_item_visible: page === '/works' }" @click="link_commit('/works')">
               WORKS
             </div>
             <div class="menu_underline" />
-          </div>
-          <div class="menu-item-box">
-            <div class="menu_link" :class="{ menu_item_visible: page === '/about' }" @click="link_commit('/about')">
+          </div> -->
+          <!-- <div class="menu-item-box">
+            <div class="menu_link"
+            :class="{ menu_item_visible: page === '/about' }" @click="link_commit('/about')">
               ABOUT
             </div>
             <div class="menu_underline" />
-          </div>
-          <div class="menu-item-box">
-            <div class="menu_link" :class="{ menu_item_visible: page === '/contact' }" @click="link_commit('/contact')">
+          </div> -->
+          <!-- <div class="menu-item-box">
+            <div class="menu_link"
+            :class="{ menu_item_visible: page === '/contact' }" @click="link_commit('/contact')">
               CONTACT
             </div>
             <div class="menu_underline" />
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -37,23 +91,77 @@
         <div class="m-menu-wrap menu-display">
           <div class="menu_items menu_items_row">
             <div class="menu-item-box">
-              <a class="menu_link" :class="{ menu_item_visible: page === '/works' }" @click="link_commit('/works')">
+              <a
+                class="menu_link"
+                :class="{ menu_item_visible: page === '/project' }"
+                @click="link_commit('/project')"
+              >
+                PROJECT
+              </a>
+              <div class="menu_underline" />
+            </div>
+            <div class="menu-item-box">
+              <a
+                class="menu_link"
+                :class="{ menu_item_visible: page === '/repository' }"
+                @click="link_commit('/repository')"
+              >
+                REPOSITORY
+              </a>
+              <div class="menu_underline" />
+            </div>
+            <div class="menu-item-box">
+              <a
+                class="menu_link"
+                :class="{ menu_item_visible: page === '/Config' }"
+                @click="link_commit('/Config')"
+              >
+                CONFIG
+              </a>
+              <div class="menu_underline" />
+            </div>
+
+            <div class="menu-item-box">
+              <a
+                class="menu_link"
+                :class="{ menu_item_visible: page === '/host' }"
+                @click="link_commit('/host')"
+              >
+                HOST
+              </a>
+              <div class="menu_underline" />
+            </div>
+            <div class="menu-item-box">
+              <a
+                class="menu_link"
+                :class="{ menu_item_visible: page === '/deploy' }"
+                @click="link_commit('/deploy')"
+              >
+                AUTO-DEPLOY
+              </a>
+              <div class="menu_underline" />
+            </div>
+            <!-- <div class="menu-item-box">
+              <a class="menu_link"
+              :class="{ menu_item_visible: page === '/works' }" @click="link_commit('/works')">
                 WORKS
               </a>
               <div class="menu_underline" />
-            </div>
-            <div class="menu-item-box">
-              <a class="menu_link" :class="{ menu_item_visible: page === '/about' }" @click="link_commit('/about')">
+            </div> -->
+            <!-- <div class="menu-item-box">
+              <a class="menu_link"
+              :class="{ menu_item_visible: page === '/about' }" @click="link_commit('/about')">
                 ABOUT
               </a>
               <div class="menu_underline" />
-            </div>
-            <div class="menu-item-box">
-              <a class="menu_link" :class="{ menu_item_visible: page === '/contact' }" @click="link_commit('/contact')">
+            </div> -->
+            <!-- <div class="menu-item-box">
+              <a class="menu_link"
+              :class="{ menu_item_visible: page === '/contact' }" @click="link_commit('/contact')">
                 CONTACT
               </a>
               <div class="menu_underline" />
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -122,7 +230,6 @@ export default {
     background-color: #212121;
     margin:0;
     padding:0;
-
 }
 //nav-menu---------------------------------------
 .nav-menu{
@@ -224,7 +331,7 @@ export default {
     left:0;
     width:100vw;
     height: calc(100vh + #{ $header-height });
-    background-color:rgba(0,0,0,1);
+    background-color: $footer-color-color;
     @extend %center;
 }
 .v_open_menu{

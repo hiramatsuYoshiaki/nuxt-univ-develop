@@ -13,36 +13,54 @@
     <nav class="footer-menu">
       <div class="menu_items">
         <div class="menu-item-box">
-          <a
-            class="menu_link"
-            :class="{ menu_item_visible: page === '/works' }"
-            @click="link_commit('/works')"
-          >
-            Works
+          <a class="menu_link" :class="{ menu_item_visible: page === '/project' }" @click="link_commit('/project')">
+            PROJECT
+          </a>
+          <div class="menu_underline" />
+        </div>
+        <div class="menu-item-box">
+          <a class="menu_link" :class="{ menu_item_visible: page === '/repository' }" @click="link_commit('/repository')">
+            REPOSITORY
+          </a>
+          <div class="menu_underline" />
+        </div>
+        <div class="menu-item-box">
+          <a class="menu_link" :class="{ menu_item_visible: page === '/Config' }" @click="link_commit('/Config')">
+            CONFIG
           </a>
           <div class="menu_underline" />
         </div>
 
         <div class="menu-item-box">
-          <a
-            class="menu_link"
-            :class="{ menu_item_visible: page === '/about' }"
-            @click="link_commit('/about')"
-          >
-            ABOUT
+          <a class="menu_link" :class="{ menu_item_visible: page === '/host' }" @click="link_commit('/host')">
+            HOST
           </a>
           <div class="menu_underline" />
         </div>
         <div class="menu-item-box">
-          <a
-            class="menu_link"
-            :class="{ menu_item_visible: page === '/contact' }"
-            @click="link_commit('/contact')"
-          >
-            CONTACT
+          <a class="menu_link" :class="{ menu_item_visible: page === '/deploy' }" @click="link_commit('/deploy')">
+            AUTO-DEPLOY
           </a>
           <div class="menu_underline" />
         </div>
+        <!-- <div class="menu-item-box">
+          <a class="menu_link" :class="{ menu_item_visible: page === '/works' }" @click="link_commit('/works')" >
+            Works
+          </a>
+          <div class="menu_underline" />
+        </div> -->
+        <!-- <div class="menu-item-box">
+          <a class="menu_link" :class="{ menu_item_visible: page === '/about' }" @click="link_commit('/about')">
+            ABOUT
+          </a>
+          <div class="menu_underline" />
+        </div> -->
+        <!-- <div class="menu-item-box">
+          <a class="menu_link" :class="{ menu_item_visible: page === '/contact' }" @click="link_commit('/contact')">
+            CONTACT
+          </a>
+          <div class="menu_underline" />
+        </div> -->
       </div>
     </nav>
     <div class="footer-bottom">

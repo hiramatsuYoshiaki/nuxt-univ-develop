@@ -53,7 +53,7 @@ $main-contents-color: #fff;
 $main-contents-text: #000;
 
 //footer-color
-$footer-color-color: rgb(1, 22, 49);
+$footer-color-color: rgba(63,169,245,1);
 $footer-color-text: #fff;
 
 // $base-text-color: #fff;
@@ -66,9 +66,18 @@ $black-bg-color: #212121;
 $white-base-text-color: #212121;
 $white-bg-color: #fff; 
 
+$card-container-color: #212121;
+$card-container-bg: #ffffff;
+$card-container-border: #696969;
 
-
-
+//btn
+$btn-bg-blue: #2196f3;
+$btn-bg-darkblue: #1976d2;
+$btn-color-white: #ffff;
+$btn-box-shadow-z10:  0px 3px 3px 0px rgba(50, 50, 50, 0.1);
+$btn-box-shadow-z50:  0px 4px 3px 0px rgba(50, 50, 50, 0.2);
+$btn-box-shadow-z100: 0px 5px 3px 0px rgba(50, 50, 50, 0.3);
+$btn-trans:0.3s ease;
 
 
 // Media Query Ranges
