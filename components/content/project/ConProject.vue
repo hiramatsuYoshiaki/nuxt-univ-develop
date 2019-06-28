@@ -84,7 +84,55 @@
                 </a>
               </div> -->
             </div>
-            <div class="card-container" />
+            <div class="card-container card-container-border">
+              <div
+                class="card-rich-Media "
+                :style="{'background':'url(' + nuxtUnivDevelop + ') center / cover no-repeat'}"
+              />
+
+              <div class="card-primary-title">
+                nuxt-nuxt-develop
+              </div>
+              <div class="card-primary-sub-title">
+                Nuxtのホスティングデモ
+              </div>
+              <div class="card-detail">
+                <!-- <div class="card-supporting-title">
+                  GitHub Repository
+                </div>
+                <div class="card-supporting-title">
+                  NuxtアプリケーションをGitHub Pagesへホスティング
+                </div> -->
+                <div class="card-action-title">
+                  Trial Product
+                </div>
+                <div class="card-tag">
+                  <a href="https://optimistic-poitras-8394df.netlify.com/" target="_blank">
+                    <button class="btn">
+                      Demo Page
+                    </button>
+                  </a>
+                  <a href="https://github.com/hiramatsuYoshiaki/nuxt-univ-develop/pull/1" target="_blank">
+                    <button class="btn">
+                      GitHub Repository
+                    </button>
+                  </a>
+
+                  <a href="https://www.netlify.com/" target="_blank">
+                    <button class="btn">
+                      Netlify
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <!-- <div class="card-action  ">
+                <a href="https://hiramatsuyoshiaki.github.io/nuxt-create-app1/" target="_blank">
+                  <button class="btn">
+                    Demo Page
+                  </button>
+                </a>
+              </div> -->
+            </div>
             <div class="card-container" />
           </div>
         </div>
@@ -278,6 +326,7 @@ export default {
     return {
       nuxtCreateApp1: require('~/assets/img/capcher/nuxtCreateApp1.gif'),
       nuxtUnivApp1: require('~/assets/img/capcher/nuxt-univ-app1.gif'),
+      nuxtUnivDevelop: require('~/assets/img/capcher/nuxt-univ-develop.gif'),
       nuxtUnivApp2Heroku: require('~/assets/img/capcher/nuxt-univ-app2-heroku.gif'),
       nuxtUnivFirebaseApp2: require('~/assets/img/capcher/nuxt-univ-firebase-app2.gif'),
       cardImg: require('~/assets/img/fuji1.jpg'),
