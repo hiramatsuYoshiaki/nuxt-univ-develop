@@ -9,8 +9,8 @@ export default {
   head: {
     title: pkg.name,
     meta: [
-      { name: "google-site-verification",
-        content: "TaWpD9i4R5GSPzJjnTc8--t-g8bbDKbfxQX-e1kgio0" },
+      // { name: "google-site-verification",
+      //   content: "TaWpD9i4R5GSPzJjnTc8--t-g8bbDKbfxQX-e1kgio0" },
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
@@ -46,6 +46,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~plugins/vue-lazyload', ssr: false },
   ],
 
   /*
@@ -55,8 +56,8 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
-    ['@nuxtjs/google-analytics', { id: 'UA-35511262-5' }],
-    '@nuxtjs/sitemap',
+    // ['@nuxtjs/google-analytics', { id: 'UA-35511262-5' }],
+    // '@nuxtjs/sitemap',
     '@nuxtjs/markdownit'
   ],
   styleResources: {
@@ -64,25 +65,21 @@ export default {
       '~/assets/sass/variable.scss',
     ],
   },
-  sitemap: {
-    // path: '/sitemap.xml',//Default: sitemap.xml
-    hostname: 'https://romantic-kare-6d357c.netlify.com/',
-    generate: true,
-    // exclude: [
-    //   '/admin'
-    // ],
-    routes:[
-      "/",
-      {
-        url: '/works',
-        changefreq: 'daily',
-        priority: 1,
-        lastmodISO: '2017-06-30T13:30:00.000Z'
-      },
-      "/about",
-      "/contact"
-    ]
-  },
+  // sitemap: {
+  //   hostname: 'https://romantic-kare-6d357c.netlify.com/',
+  //   generate: true,
+  //   routes:[
+  //     "/",
+  //     {
+  //       url: '/works',
+  //       changefreq: 'daily',
+  //       priority: 1,
+  //       lastmodISO: '2017-06-30T13:30:00.000Z'
+  //     },
+  //     "/about",
+  //     "/contact"
+  //   ]
+  // },
   markdownit: {
     preset: 'default',
     injected: true, 
