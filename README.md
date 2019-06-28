@@ -1,6 +1,49 @@
 # nuxt-univ-develop 
 Nuxtのアプリケーションのホスティング設定 
  
+### vue-lazyloadを使って画像の遅延読み込みをする
+1. Nuxtのプロジェクトにvue-lazyloadをインストール 
+```
+$ npm i vue-lazyload --save
+```
+2. plugins/vue-lazyload.jsを作成
+`plugins` 
+```
+import VueLazyload from 'vue-lazyload'
+Vue.use(VueLazyload, {
+    lazyComponent: true
+});
+```
+2. nuxt.config　setting 
+```
+plugins: [
+  { src: '~plugins/vue-lazyload', ssr: false },
+],
+```
+3. imgタグで実装 
+```
+<no-ssr>
+  <lazy-component>
+    <figure class="image is-128x128">
+      <img class="is-rounded kakomi" src="~/assets/icon.png">
+    </figure>
+  </lazy-component>
+</no-ssr>
+```
+3. 背景画像で実装 
+```
+<no-ssr>
+  <lazy-component>
+    <figure class="image is-128x128">
+      <img class="is-rounded kakomi" src="~/assets/icon.png">
+    </figure>
+  </lazy-component>
+</no-ssr>
+```
+        
+
+
+
 # nuxt-univ-app1
 > My peachy Nuxt.js project
 ## reate-nuxt-app

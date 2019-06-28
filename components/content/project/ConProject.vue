@@ -34,7 +34,7 @@
             <div class="card-container card-container-border">
               <div
                 class="card-rich-Media "
-                :style="{'background-image':'url(' + nuxtUnivApp1 + '); background-size: cover;'}"
+                :style="{'background':'url(' + nuxtUnivApp1 + ') center / cover no-repeat'}"
               />
 
               <div class="card-primary-title">
@@ -98,7 +98,7 @@
             <div class="card-container card-container-border">
               <div
                 class="card-rich-Media "
-                :style="{'background-image':'url(' + nuxtUnivApp2Heroku + '); background-size: cover;'}"
+                :style="{'background':'url(' + nuxtUnivApp2Heroku + ') center / cover no-repeat'}"
               />
 
               <div class="card-primary-title">
@@ -156,7 +156,7 @@
             <div class="card-container card-container-border">
               <div
                 class="card-rich-Media "
-                :style="{'background-image':'url(' + nuxtUnivFirebaseApp2 + '); background-size: cover;'}"
+                :style="{'background':'url(' + nuxtUnivFirebaseApp2 + ') center / cover no-repeat'}"
               />
 
               <div class="card-primary-title">
@@ -219,7 +219,7 @@
             <div class="card-container card-container-border">
               <div
                 class="card-rich-Media "
-                :style="{'background-image':'url(' + nuxtCreateApp1 + '); background-size: cover;'}"
+                :style="{'background':'url(' + nuxtCreateApp1 + ') center / cover no-repeat'}"
               />
               <div class="card-primary-title">
                 nuxt-create-app1
