@@ -27,7 +27,8 @@
 
             <h3>Netlify</h3>
             <h3>Heroku</h3>
-            <h3>Firebase</h3>
+            <h3>Google Firebase</h3>
+            <h3>Google Cloud Platform</h3>
             <h3>GitHubPage</h3>
           </div>
         </div>

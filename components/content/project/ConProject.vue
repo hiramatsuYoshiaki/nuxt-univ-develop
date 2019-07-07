@@ -14,12 +14,17 @@
         </a>
         <a href="#a3">
           <p class="topMenu topMenu1" :class="{ activeTopMenu : selectMenu === 3}" @click="menuActive(3)">
-            3. Firebase
+            3. Google Firebase
           </p>
         </a>
         <a href="#a4">
           <p class="topMenu topMenu1" :class="{ activeTopMenu : selectMenu === 4}" @click="menuActive(4)">
-            4. GitHub Pages
+            4. Google Cloud Platform
+          </p>
+        </a>
+        <a href="#a5">
+          <p class="topMenu topMenu1" :class="{ activeTopMenu : selectMenu === 5}" @click="menuActive(5)">
+            5. GitHub Pages
           </p>
         </a>
       </div>
@@ -290,7 +295,65 @@
         <div id="a4" />
         <div class="main-wrap">
           <div class="topMain h1-res">
-            4. GitHub Pages へデプロイ
+            4. Google Cloud Platform へデプロイ
+          </div>
+          <div class="flex-card-container ">
+            <div class="card-container card-container-border">
+              <div
+                class="card-rich-Media "
+                :style="{'background':'url(' + nuxtUnivCreateGaeHosting + ') center / cover no-repeat'}"
+              />
+              <div class="card-primary-title">
+                nuxt-univ-create-gae-hosting
+              </div>
+              <div class="card-primary-sub-title">
+                Nuxtアプリケーションを GoogleCloudPlatform(GAE) へホスティング
+              </div>
+              <div class="card-detail">
+                <!-- <div class="card-supporting-title">
+                  GitHub Repository
+                </div>
+                <div class="card-supporting-title">
+                  NuxtアプリケーションをGitHub Pagesへホスティング
+                </div> -->
+
+                <div class="card-action-title">
+                  Trial Product
+                </div>
+                <div class="card-tag">
+                  <a href="https://nuxt-univ-gae-app.appspot.com/" target="_blank">
+                    <button class="btn">
+                      Demo Page
+                    </button>
+                  </a>
+                  <a href="https://github.com/hiramatsuYoshiaki/nuxt-univ-create-gae-hosting" target="_blank">
+                    <button class="btn">
+                      GitHub Repository
+                    </button>
+                  </a>
+                  <a href="https://cloud.google.com/solutions/websites/?hl=ja" target="_blank">
+                    <button class="btn">
+                      Google Cloud Platform
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <!-- <div class="card-action  ">
+                <a href="https://hiramatsuyoshiaki.github.io/nuxt-create-app1/" target="_blank">
+                  <button class="btn">
+                    Demo Page
+                  </button>
+                </a>
+              </div> -->
+            </div>
+            <div class="card-container" />
+            <div class="card-container" />
+          </div>
+        </div>
+        <div id="a5" />
+        <div class="main-wrap">
+          <div class="topMain h1-res">
+            5. GitHub Pages へデプロイ
           </div>
           <div class="flex-card-container ">
             <div class="card-container card-container-border">
@@ -359,6 +422,7 @@ export default {
       nuxtUnivApp2Heroku: require('~/assets/img/capcher/nuxt-univ-app2-heroku.gif'),
       nuxtUnivFirebaseApp2: require('~/assets/img/capcher/nuxt-univ-firebase-app2.gif'),
       nuxtUnivFirebaseHosting: require('~/assets/img/capcher/nuxt-univ-firebase-hosting.gif'),
+      nuxtUnivCreateGaeHosting: require('~/assets/img/capcher/nuxt-univ-create-gae-hosting.gif'),
       cardImg: require('~/assets/img/fuji1.jpg'),
       selectMenu: -1,
       cmd11: ` 
