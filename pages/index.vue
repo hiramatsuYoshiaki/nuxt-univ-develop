@@ -13,19 +13,23 @@
             h-works
           </h1>
           <h2 class="subtitle">
-            Nuxt.js Universal SSR
+            Nuxt.js Universal
           </h2>
           <h2 class="subtitle">
             GitHub + Auto Deploy
           </h2>
           <div class="top-project">
-            <p class="subtitle">
-              Demo Project
-            </p>
-            <a href="#"><h3>Netlify</h3></a>
-            <a href="#"><h3>Heroku</h3></a>
-            <a href="#"><h3>Firebase</h3></a>
-            <a href="#"><h3>GitHubPage</h3></a>
+            <nuxt-link to="/project">
+              <p class="subtitle">
+                Demo Project
+              </p>
+            </nuxt-link>
+
+            <h3>Netlify</h3>
+            <h3>Heroku</h3>
+            <h3>Google Firebase</h3>
+            <h3>Google Cloud Platform</h3>
+            <h3>GitHubPage</h3>
           </div>
         </div>
       </div>
