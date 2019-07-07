@@ -204,6 +204,46 @@
             <div class="card-container card-container-border">
               <div
                 class="card-rich-Media "
+                :style="{'background':'url(' + nuxtUnivFirebaseHosting + ') center / cover no-repeat'}"
+              />
+
+              <div class="card-primary-title">
+                nuxt-univ-firebase-hosting
+              </div>
+              <div class="card-primary-sub-title">
+                NuxtアプリケーションをFirebaseへホスティング
+              </div>
+              <div class="card-detail">
+                <div class="card-action-title">
+                  Trial Product
+                </div>
+                <div class="card-tag">
+                  <a href="https://nuxt-app2.firebaseapp.com/" target="_blank">
+                    <button class="btn">
+                      Demo Page
+                    </button>
+                  </a>
+                  <a href="https://github.com/hiramatsuYoshiaki/nuxt-univ-firebase-hosting" target="_blank">
+                    <button class="btn">
+                      GitHub Repository
+                    </button>
+                  </a>
+                  <a href="https://circleci.com/" target="_blank">
+                    <button class="btn">
+                      Circl CI
+                    </button>
+                  </a>
+                  <a href="https://firebase.google.com/?hl=ja" target="_blank">
+                    <button class="btn">
+                      Firebase
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="card-container card-container-border">
+              <div
+                class="card-rich-Media "
                 :style="{'background':'url(' + nuxtUnivFirebaseApp2 + ') center / cover no-repeat'}"
               />
 
@@ -214,12 +254,7 @@
                 NuxtアプリケーションをFirebaseへホスティング
               </div>
               <div class="card-detail">
-                <!-- <div class="card-supporting-title">
-                  GitHub Repository
-                </div>
-                <div class="card-supporting-title">
-                  NuxtアプリケーションをGitHub Pagesへホスティング
-                </div> -->
+
                 <div class="card-action-title">
                   Trial Product
                 </div>
@@ -246,14 +281,8 @@
                   </a>
                 </div>
               </div>
-              <!-- <div class="card-action  ">
-                <a href="https://hiramatsuyoshiaki.github.io/nuxt-create-app1/" target="_blank">
-                  <button class="btn">
-                    Demo Page
-                  </button>
-                </a>
-              </div> -->
-            </div>
+
+            </div> -->
             <div class="card-container" />
             <div class="card-container" />
           </div>
@@ -329,6 +358,7 @@ export default {
       nuxtUnivDevelop: require('~/assets/img/capcher/nuxt-univ-develop.gif'),
       nuxtUnivApp2Heroku: require('~/assets/img/capcher/nuxt-univ-app2-heroku.gif'),
       nuxtUnivFirebaseApp2: require('~/assets/img/capcher/nuxt-univ-firebase-app2.gif'),
+      nuxtUnivFirebaseHosting: require('~/assets/img/capcher/nuxt-univ-firebase-hosting.gif'),
       cardImg: require('~/assets/img/fuji1.jpg'),
       selectMenu: -1,
       cmd11: ` 
