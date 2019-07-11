@@ -639,5 +639,13 @@ export default {
 p{
     color:rgb(70, 69, 69);
 }
+.card-primary-title{
+  color: rgb(5, 121, 5);
+    font-weight:700;
+    font-size: 1.4rem;
+    @media (min-width: 992px) {
+        font-size: 2rem;
+    };
+}
 
 </style>
