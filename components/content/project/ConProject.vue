@@ -33,7 +33,7 @@
         <div id="a1" />
         <div class="main-wrap">
           <div class="topMain h1-res">
-            1. Netlify へデプロイ
+            1. Netlify ディプロイ
           </div>
           <div class="flex-card-container ">
             <div class="card-container card-container-border">
@@ -145,7 +145,7 @@
         <div id="a2" />
         <div class="main-wrap">
           <div class="topMain h1-res">
-            2. Heroku へデプロイ
+            2. Heroku ディプロイ
           </div>
           <div class="flex-card-container ">
             <div class="card-container card-container-border">
@@ -203,7 +203,7 @@
         <div id="a3" />
         <div class="main-wrap">
           <div class="topMain h1-res">
-            3. Firebase へデプロイ
+            3. Firebase ディプロイ
           </div>
           <div class="flex-card-container ">
             <div class="card-container card-container-border">
@@ -295,7 +295,7 @@
         <div id="a4" />
         <div class="main-wrap">
           <div class="topMain h1-res">
-            4. Google Cloud Platform へデプロイ
+            4. Google Cloud Platform ディプロイ
           </div>
           <div class="flex-card-container ">
             <div class="card-container card-container-border">
@@ -346,14 +346,61 @@
                 </a>
               </div> -->
             </div>
-            <div class="card-container" />
+            <div class="card-container card-container-border">
+              <div
+                class="card-rich-Media "
+                :style="{'background':'url(' + nuxtUnivGaeTodo2 + ') center / cover no-repeat'}"
+              />
+              <div class="card-primary-title">
+                nuxt-univ-create-gae-todo2
+              </div>
+              <div class="card-primary-sub-title">
+                Nuxtアプリケーションを GoogleCloudPlatform(GAE) へホスティング
+              </div>
+              <div class="card-detail">
+                <!-- <div class="card-supporting-title">
+                  GitHub Repository
+                </div>
+                <div class="card-supporting-title">
+                  NuxtアプリケーションをGitHub Pagesへホスティング
+                </div> -->
+
+                <div class="card-action-title">
+                  Trial Product
+                </div>
+                <div class="card-tag">
+                  <a href="https://nuxt-univ-create-gae-todo.appspot.com/" target="_blank">
+                    <button class="btn">
+                      Demo Page
+                    </button>
+                  </a>
+                  <a href="https://github.com/hiramatsuYoshiaki/nuxt-univ-create-gae-todo2" target="_blank">
+                    <button class="btn">
+                      GitHub Repository
+                    </button>
+                  </a>
+                  <a href="https://cloud.google.com/solutions/websites/?hl=ja" target="_blank">
+                    <button class="btn">
+                      Google Cloud Platform
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <!-- <div class="card-action  ">
+                <a href="https://hiramatsuyoshiaki.github.io/nuxt-create-app1/" target="_blank">
+                  <button class="btn">
+                    Demo Page
+                  </button>
+                </a>
+              </div> -->
+            </div>
             <div class="card-container" />
           </div>
         </div>
         <div id="a5" />
         <div class="main-wrap">
           <div class="topMain h1-res">
-            5. GitHub Pages へデプロイ
+            5. GitHub Pages ディプロイ
           </div>
           <div class="flex-card-container ">
             <div class="card-container card-container-border">
@@ -423,6 +470,7 @@ export default {
       nuxtUnivFirebaseApp2: require('~/assets/img/capcher/nuxt-univ-firebase-app2.gif'),
       nuxtUnivFirebaseHosting: require('~/assets/img/capcher/nuxt-univ-firebase-hosting.gif'),
       nuxtUnivCreateGaeHosting: require('~/assets/img/capcher/nuxt-univ-create-gae-hosting.gif'),
+      nuxtUnivGaeTodo2: require('~/assets/img/capcher/nuxt-univ-gae-todo2.gif'),
       cardImg: require('~/assets/img/fuji1.jpg'),
       selectMenu: -1,
       cmd11: ` 

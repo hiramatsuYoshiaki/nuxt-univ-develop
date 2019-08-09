@@ -241,18 +241,21 @@ export default {
     display: flex;
     flex-direction: row;
 }
-.nav-menu .block{
-    width: 33.333%;
-    height:100%;
-}
+// .nav-menu .block{
+//     width: 33.333%;
+//     height:100%;
+// }
 .nav-menu .left-block{
    @extend %left;
+   width: 25%;
 }
 .nav-menu .center-block{
    @extend %center;
+   width: 25%;
 }
 .nav-menu .right-block{
    @extend %right;
+   width: 50%;
 }
 //logo bar----------------------------------------
 .logo-wrap{
