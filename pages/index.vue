@@ -20,8 +20,8 @@
           </h2>
           <div class="top-project">
             <nuxt-link to="/project">
-              <p class="subtitle">
-                Demo Project
+              <p class="subtitle demo-project">
+                Demo Project Listを見る。
               </p>
             </nuxt-link>
 
@@ -240,6 +240,9 @@ export default {
       display: block;
       padding: .5rem;
       margin: 1rem 0;
+    }
+    .demo-project{
+      padding: 1rem ;
     }
   }
   h1{
